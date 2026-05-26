@@ -1,6 +1,6 @@
-# Train a Document Classifier (AI SaaS)
+# Train a Document Classifier 
 
-Production-ready AI SaaS web application to upload categorized documents, train a document classifier, predict categories, detect duplicates, generate tags, and summarize documents.
+Web application to upload categorized documents, train a document classifier, predict categories, detect duplicates, generate tags, and summarize documents.
 
 ## Tech
 
@@ -88,7 +88,7 @@ Create environment variables before running:
 - `DELETE /dataset/<id>`
 - `GET /analytics`
 
-## Production Deployment (Recommended)
+## Production Deployment 
 
 ### Backend
 
@@ -113,10 +113,4 @@ npm run build
 ```
 
 Serve the `dist/` output using your preferred static hosting.
-
-## Notes
-
-- The model is trained per user and saved under `backend/models/user_<id>/model_bundle.joblib`.
-- Duplicate detection uses cosine similarity in TF-IDF space.
-- Tag generation uses TF-IDF term weights from the trained vectorizer.
 
